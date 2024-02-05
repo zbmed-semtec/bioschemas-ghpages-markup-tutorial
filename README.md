@@ -16,6 +16,7 @@
 * Use schema and Bioschemas validators
 
 <img src="./icons/circle-check.svg" width="16" height="16"/> __Requirements__
+* Understanding of what is Bioschemas and what are Bioschemas types and profiles
 * Familiarity on how to use GitHub 
 * Basic knowledge on how to use GitHub pages. More information at [GitHub Pages](https://pages.github.com/)
 * Familiarity with JSON-LD
