@@ -51,14 +51,17 @@ In this tutorial we will cover:
 
 ### Creating this GitHub Page
 Let's start by forking [this repository](https://github.com/zbmed-semtec/bioschemas-ghpages-markup-tutorial) for your own purposes. Once forked, go to settings
+
 ![Settings](./images/settings.png)
 
 You will need to enable "Pages" on your forked repository, and select "Deploy from a branch" using the branch "gh-pages". Save the changes. 
 
 As this repo does have a gh-pages branch, it will use it. If such branch would not exist, GitHub would ask you to use the main branch to start the gh-pages one
+
 ![GitHub Pages](./images/pages.png)
 
 In a matter of minutes, your site will be live. The pages corresponding to the examples used in this tutorial are available at [https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/)
+
 ![Published pages](./images/pages-published.png)
 
 Do not forget to get a local copy of your fork so you can make changes.
@@ -69,6 +72,7 @@ We have already added schema.org and Bioschemas markup corresponding to our exam
 The Bioschemas markup will start with the context `"@context": "https://schema.org"`, i.e., where all types and profiles are defined.
 
 Then you add the type and id of what you are describing, for instace a `bioschemas:ComputationalTool`. The `"http://purl.org/dc/terms/conformsTo"` is the bit that indicates that you are using Bioschemas.
+
 ```
   "@type": "SoftwareApplication",
   "@id": "https://doi.org/10.5281/zenodo.7341391",
@@ -82,6 +86,7 @@ Have a look to the pages that we have created, one for the [code and correspondi
 The [software page] has markup for two elements, `schema:SoftareSourceCode` and `bioschemas:ComputationalTool`. 
 
 The markup corresponding to `schema:SoftwareSourceCode` is shown below. Note that the _source code_ is linked to the _release_ via the property `schema:targetProduct`. In the code below, we are using the _release_ `@id` to refer to it.
+
 ```
 <script type="application/ld+json">
   { 
@@ -116,7 +121,8 @@ The markup corresponding to `schema:SoftwareSourceCode` is shown below. Note tha
 
 Note that we use a trick for the `@id` and the `schema:url` in our markup. Identifiers should be unique, global and permanent, like e.g., DOIs, and clearly identify the object they describe (in this case a source code). But, we do not have such a PID for our source code, we only have the GitHub URL for our repo. Now, if the `@id` is meant to identify a source code, we cannot use the exact same URL for the source code and for a "regular" url. We add `#` to the "regular" URL. If we do not, validators will see that the exact same URL is used to identify a source code and a "regular" URL but source codes and URLs are not the same thing so the validators might get confused. Using the exact same URL would be like saying that an animal is a cat at the same time that it is a dog, it cannot be. The best way to go would be getting an actual PID for your repo, e.g., via w3id.org
 
-and the markup corresponding to the `bioschemas:ComputationalTool`
+And here you have the markup corresponding to the `bioschemas:ComputationalTool`
+
 ```
 <script type="application/ld+json">
   { 
@@ -151,6 +157,7 @@ and the markup corresponding to the `bioschemas:ComputationalTool`
 ```
 
 The [dataset page]() has markup only for one element, a dataset.
+
 ```
 <script type="application/ld+json">
   
@@ -196,9 +203,11 @@ Whenever you use a Bioschemas profile, go to the corresponding page, we have use
 The minimum information that you should provide are the "minimum" properties, and, whenever possible, it is a good idea to also provide the "recommended" ones. Optional properties are up to you. Another important piece of information is the cardinality, whether or not you could use a single _object_ or an _array_.
 
 You can find examples and other useful links for each Bioschemas profile
+
 ![Useful links](./images/links.png)
 
 And also [live deploys](https://bioschemas.org/developer/liveDeploys#nav-profile) using the profile
+
 ![Live deploys](./images/livedploys.png)
 
 If you use Bioschemas markup on your website, you can also add it to the "live deploy" list. TODO
@@ -208,10 +217,15 @@ If you use Bioschemas markup on your website, you can also add it to the "live d
 Once the markup is in place and the page is live, you can use the developers tools in a browser to visualize the markup. You can use the `inspect` tool in e.g., Chrome, Firefox or Edge. 
 
 Go to the [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html) and use the `inspect` tool for any element. You should see the HTML.
-![Inspect HTML](./images/inspect.png). With `CTRL+F`(or `command key + F` on Macs) to search and find `context`. The first one is added by GitHub pages, and describes the page as a `schema:WebPage`.
+
+![Inspect HTML](./images/inspect.png)
+
+With `CTRL+F`(or `command key + F` on Macs) to search and find `context`. The first one is added by GitHub pages, and describes the page as a `schema:WebPage`.
+
 ![schem:WebPage](./images/schema_page.png)
 
 The second occurence will be the markup corresponding to the `schema:SoftwareSourceCode` and `bioschemas:ComputationalTool` manually added to the block `<script type="application/ld+json">`.
+
 ![bioschemas:ComputationalTool](./images/bioschemas_comptool.png)
 
 If you look closely, you will notice that we have the elementt `bioschemas:ComputationalTool` fully inside the element `schema:SoftwareSourceCode` rather than a reference via the `"@id": "https://doi.org/10.5281/zenodo.7341391"` as we did above. Both ways are valid.
@@ -276,21 +290,26 @@ This is how we have embedded the Bioschemas markup on the page
 ### Validating the pages against the Schema Validator
 
 Go to [Schema validator](https://validator.schema.org/). Add the URL for either the [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html) or the [dataset page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset.html) and click on "Run Test"
+
 ![Schema validator](./images/schema-validator-url.png)
 
 In the case of the [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html), it identifies and validates the two upper objects corresponding to `schema:WebPage` and `schema:SoftwareSourceCode` but it does not find `bioschemas:ComputationalTool` (which corresponds to a `schema:SoftwareApplication`)
 
 You can run the test again with a "Code Snippet" by copying and pasting the code embedded on the page, the results will be the same. However, if you try and validate a code snippet containing only one element, the inner element `bioschemas:ComputationalTool`, the Schema Validator will identify and validate it (tested on 2024-02-05).
+
 ![Unique object validation](./images/schema-validator-result-2.png)
 
 ### Validating the pages against the Rich Results Test
 There is another schema.org validator, currently the one recommended by Google. Go to [Rich Results Test](https://search.google.com/test/rich-results) and use the same URL as before, and click "Test URL".
+
 ![Rich test](./images/rich-test.png)
 
 If you try the [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html), it will identify some errors with `schema:SoftwareApplication`. Yes, it does identify the inner element! As there is an error, only the error will be shown, nothing regarding the other elements. It looks like our `bioschemas:ComputationalTool` is missing some important elements (for Google, and you will see also for Bioschemas).
+
 ![Rich test result](./images/rich-test-result.png)
 
 If you try the [dataset page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset.html), one correct element will be identified. 
+
 ![Rich test result](./images/rich-test-result-2.png)
 
 Did you notice that nor the Schema Validator neither the Rich Results Test pay attention to the `schema:WebPage` element?
@@ -299,16 +318,20 @@ Did you notice that nor the Schema Validator neither the Rich Results Test pay a
 Let's try now a validator specific for Bioschemas. Go to [FAIR-Checker](https://fair-checker.france-bioinformatique.fr/) and click on the blue button "Inspect". 
 
 On Step 1, add the URL for either the [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html) or the [dataset page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset.html) and click on "Build Knowledge Graph"
+
 ![Inspector Step 1](./images/checker-step1.png)
 
 Once you can see that the Knowledge Graph is ready in Step 2
+
 ![Ready step2](./images/checker-step2.png)
 
 __Jump directly to step 3__, select "Bioschemas" and click "Check Bioschemas"
+
 ![Validate Bioschemas](./images/checker-step3.png)
 
 
 Only Bioschemas profiles will be checked so, in this case `bioschemas:ComputationalTool` and `bioschemas:Dataset` but not `schema:SoftwareSourceCode`.
+
 ![Result](./images/checker-result.png)
 
 We are missing some of the _recommended_ properties and the validator indicates this as _improvements_.
@@ -319,6 +342,7 @@ If you want to make it easier for machines to crawl your website (and this could
 We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create [the one for the GitHub pages used in this tutorial](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/sitemap.xml). 
 
 Our sitemap looks like
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
