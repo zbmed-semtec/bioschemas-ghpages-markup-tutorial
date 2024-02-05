@@ -44,7 +44,9 @@ In this tutorial we will cover:
 * [Adding schema.org and Bioschemas markup](#adding-schemaorg-and-bioschemas-markup)
 * [Visualizing the structured markup](#visualizing-the-structured-markup)
 * [Validating the pages against the schema Validator](#validating-the-pages-against-the-schema-validator)
+* Validating against the [Rich Results Test](#validating-the-pages-against-the-rich-results-test)
 * [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
+* [Try it out](#try-it-out)
 
 ### Creating this GitHub Page
 Let's start by forking [this repository](https://github.com/zbmed-semtec/bioschemas-ghpages-markup-tutorial) for your own purposes. Once forked, go to settings
@@ -200,12 +202,6 @@ And also [live deploys](https://bioschemas.org/developer/liveDeploys#nav-profile
 
 If you use Bioschemas markup on your website, you can also add it to the "live deploy" list. TODO
 
-#### Try it out
-
-Try and modify the markup to describe a source code of your own. If you have not created a release yet, use only `schema:SoftwareSourceCode`. If you have a release or if you prefer, you can omit the markup for the source code and use only `bioschemas:ComputationalTool` for your release. Or you can provide some markup describing a dataset you have created for this you would use `bioschemas:Dataset`. 
-
-Are you interested in using Bioschemas markup for real on your web pages? [Join the community](https://bioschemas.org/community/howtojoin), you can send questions to the mailing list or more informally on the Slack channel.
-
 ### Visualizing the structured markup
 
 Once the markup is in place and the page is live, you can use the developers tools in a browser to visualize the markup. You can use the `inspect` tool in e.g., Chrome, Firefox or Edge. 
@@ -313,4 +309,20 @@ __Jump directly to step 3__, select "Bioschemas" and click "Check Bioschemas"
 
 Only Bioschemas profiles will be checked so, in this case `bioschemas:ComputationalTool` and `bioschemas:Dataset` but not `schema:SoftwareSourceCode`.
 ![Result](./images/checker-result.png)
+
 We are missing some of the _recommended_ properties and the validator indicates this as _improvements_.
+
+### Sitemap
+If you want to make it easier for machines to crawl your website (and this could be a good idea when you have markup and you want to enable easy integration into aggregators), consider adding a sitemap.xml to your website.
+
+TODO
+
+### Try it out
+
+Try and modify the markup to describe a source code of your own. If you have not created a release yet, use only `schema:SoftwareSourceCode`. If you have a release or if you prefer, you can omit the markup for the source code and use only `bioschemas:ComputationalTool` for your release. Or you can provide some markup describing a dataset you have created for this you would use `bioschemas:Dataset`. 
+
+Are you interested in using Bioschemas markup for real on your web pages? [Join the community](https://bioschemas.org/community/howtojoin), you can send questions to the mailing list or more informally on the Slack channel.
+
+## What is next?
+We covered a manual addition of schema.org and Bioschemas markup to GitHub pages. However, websites many times are created by a production pipeline. In those cases, markup creation should be integrated to it. 
+
