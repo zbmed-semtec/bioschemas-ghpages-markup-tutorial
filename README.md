@@ -315,7 +315,34 @@ We are missing some of the _recommended_ properties and the validator indicates 
 ### Sitemap
 If you want to make it easier for machines to crawl your website (and this could be a good idea when you have markup and you want to enable easy integration into aggregators), consider adding a sitemap.xml to your website.
 
-TODO
+We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create the one for the GitHub pages used in this tutorial. The bigger the website, the better idea to have a sitemap.
+
+Our sitemap looks like
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <url>
+    <loc>https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/</loc>
+    <lastmod>2024-02-05T14:31:07+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html</loc>
+    <lastmod>2024-02-05T14:31:07+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset.html</loc>
+    <lastmod>2024-02-05T14:31:07+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
+```
 
 ### Try it out
 
