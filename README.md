@@ -44,8 +44,9 @@ In this tutorial we will cover:
 * [Adding schema.org and Bioschemas markup](#adding-schemaorg-and-bioschemas-markup)
 * [Visualizing the structured markup](#visualizing-the-structured-markup)
 * [Validating the pages against the schema Validator](#validating-the-pages-against-the-schema-validator)
-* Validating against the [Rich Results Test](#validating-the-pages-against-the-rich-results-test)
+* [Validating against the Rich Results Test](#validating-the-pages-against-the-rich-results-test)
 * [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
+* [Creating a sitemap](#creting-a-sitemap)
 * [Try it out](#try-it-out)
 
 ### Creating this GitHub Page
@@ -312,10 +313,10 @@ Only Bioschemas profiles will be checked so, in this case `bioschemas:Computatio
 
 We are missing some of the _recommended_ properties and the validator indicates this as _improvements_.
 
-### Sitemap
+### Creting a Sitemap
 If you want to make it easier for machines to crawl your website (and this could be a good idea when you have markup and you want to enable easy integration into aggregators), consider adding a sitemap.xml to your website.
 
-We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create the one for the GitHub pages used in this tutorial. The bigger the website, the better idea to have a sitemap.
+We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create [the one for the GitHub pages used in this tutorial](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/sitemap.xml). 
 
 Our sitemap looks like
 ```
@@ -352,4 +353,6 @@ Are you interested in using Bioschemas markup for real on your web pages? [Join 
 
 ## What is next?
 We covered a manual addition of schema.org and Bioschemas markup to GitHub pages. However, websites many times are created by a production pipeline. In those cases, markup creation should be integrated to it. 
+
+We also briefly mentioned sitemaps with much of a context. We invite to get more information on what they are and why they are useful.
 
