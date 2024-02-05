@@ -37,7 +37,7 @@
 
 <img src="./icons/fingerprint.svg" width="16" height="16"/> __Identifier__ 
 
-<img src="./icons/citation.svg" width="16" height="16"/> __Citation__ 
+<img src="./icons/crosshairs.svg" width="16" height="16"/> __Citation__ 
 
 ## Learning experience
 
