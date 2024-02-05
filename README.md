@@ -5,36 +5,38 @@
 * __Description:__ This tutorial shows how to add Bioschemas markup to GitHub pages. It uses a simple GitHub page hosted in the gh-pages branch to create a sample project page, i.e., as learners could do with their own GitHub projects. As an example, it uses the software and data corresponding to the released project [TREC-doc-2-doc-relevance](https://github.com/zbmed-semtec/TREC-doc-2-doc-relevance), a web-based interface to add document-to-document relevance assessments to pairs of documents retrieved from [TREC 2005 Genomics Track](https://trec.nist.gov/data/genomics/05/genomics.qrels.large.txt). 
 * __Keywords:__ Bioschemas, schema.org, structured markup, GitHub pages
 
-__Questions__
+<img src="./icons/question.svg" width="16" height="16"/> __Questions__
 * How can I add Bioschemas markup to GitHub pages?
 * Can I also use schema.org types not included in Bioschemas?
 * How can I use Bioschemas profiles? In particular [ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE) and [Dataset](https://bioschemas.org/profiles/Dataset/1.1-DRAFT) (bonus, we also use [TrainingMaterial](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE) to describe the tutorial itself)
 
-__Learning outcomes__
+<img src="./icons/bullseye.svg" width="16" height="16"/> __Learning outcomes__
 * Describe how schema.org and Bioschemas markup can be embedded to GitHub pages
 * Use schema.org and Bioschemas profiles on GitHub pages
 * Use schema and Bioschemas validators
 
-__Requirements__
+<img src="./icons/circle-check.svg" width="16" height="16"/> __Requirements__
 * Familiarity on how to use GitHub 
 * Basic knowledge on how to use GitHub pages. More information at [GitHub Pages](https://pages.github.com/)
 * Familiarity with JSON-LD
 * Basic knowledge on Markdown
 * Knowledge of develop tools on a browser
 
-__Time estimation__ 30 minutes
+<img src="./icons/hourglass-half.svg" width="16" height="16"/> __Time estimation__ 30 minutes
 
-__Level__ Beginner / Introductory
+<img src="./icons/graduation-cap.svg" width="16" height="16"/> __Level__ Beginner / Introductory
 
-__Published__ 2024-02-05
+<img src="./icons/calendar.svg" width="16" height="16"/> __Published__ 2024-02-05
 
-__Latest modification__ 2024-02-05
+<img src="./icons/pen-to-square.svg" width="16" height="16"/> __Latest modification__ 2024-02-05
 
-__License__ [CC-By 4.0](https://spdx.org/licenses/CC-BY-4.0)
+<img src="./icons/scale-balance.svg" width="16" height="16"/> __License__ [CC-By 4.0](https://spdx.org/licenses/CC-BY-4.0)
 
-__Identifier__ 
+<img src="./icons/code-compare.svg" width="16" height="16"/> __Version__ 1.0.0
 
-__Citation__ 
+<img src="./icons/fingerprint.svg" width="16" height="16"/> __Identifier__ 
+
+<img src="./icons/citation.svg" width="16" height="16"/> __Citation__ 
 
 ## Learning experience
 
@@ -380,3 +382,9 @@ We covered a manual addition of schema.org and Bioschemas markup to GitHub pages
 
 We also briefly mentioned sitemaps with much of a context. We invite to get more information on what they are and why they are useful.
 
+## Acknowledgements
+This tutorial is based on [bioschemas-github-markup-example](https://github.com/zbmed-semtec/bioschemas-github-markup-example) and [Adding schema.org to a GitHub Pages site](https://bioschemas.org/tutorials/howto/howto_add_github).
+
+LJC has received fundings from the[] German Research Foundation (DFG)](https://www.dfg.de/en) via the grant for NFDI4DataScience No. 460234259](https://gepris.dfg.de/gepris/projekt/460234259)
+
+We use free SVG icons from [Font Awesone](https://fontawesome.com/)
