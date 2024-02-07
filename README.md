@@ -27,17 +27,17 @@
 
 <img src="./icons/graduation-cap.svg" width="16" height="16"/> __Level__ Beginner / Introductory
 
-<img src="./icons/calendar.svg" width="16" height="16"/> __Published__ 2024-02-05
+<img src="./icons/calendar.svg" width="16" height="16"/> __Published__ 2024-02-07
 
-<img src="./icons/pen-to-square.svg" width="16" height="16"/> __Latest modification__ 2024-02-05
+<img src="./icons/pen-to-square.svg" width="16" height="16"/> __Latest modification__ 2024-02-07
 
 <img src="./icons/scale-balance.svg" width="16" height="16"/> __License__ [CC-By 4.0](https://spdx.org/licenses/CC-BY-4.0)
 
 <img src="./icons/code-compare.svg" width="16" height="16"/> __Version__ 1.0.0
 
-<img src="./icons/fingerprint.svg" width="16" height="16"/> __Identifier__ 
+<img src="./icons/fingerprint.svg" width="16" height="16"/> __Identifier__ [DOI:10.5281/zenodo.10629453](https://doi.org/10.5281/zenodo.10629453)
 
-<img src="./icons/crosshairs.svg" width="16" height="16"/> __Citation__ 
+<img src="./icons/crosshairs.svg" width="16" height="16"/> __Citation__ Castro, LJ. (2024, February 7). Adding Bioschemas Dataset and ComputationalTool markup to GitHub pages. Zenodo. https://doi.org/10.5281/zenodo.10629453
 
 ## Learning experience
 
