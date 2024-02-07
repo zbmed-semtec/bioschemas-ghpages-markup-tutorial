@@ -386,6 +386,6 @@ We also briefly mentioned sitemaps with much of a context. We invite to get more
 ## Acknowledgements
 This tutorial is based on [bioschemas-github-markup-example](https://github.com/zbmed-semtec/bioschemas-github-markup-example) and [Adding schema.org to a GitHub Pages site](https://bioschemas.org/tutorials/howto/howto_add_github).
 
-LJC has received fundings from the[] German Research Foundation (DFG)](https://www.dfg.de/en) via the grant for NFDI4DataScience No. 460234259](https://gepris.dfg.de/gepris/projekt/460234259)
+LJC has received fundings from the [German Research Foundation (DFG)](https://www.dfg.de/en) via the grant for NFDI4DataScience No. 460234259](https://gepris.dfg.de/gepris/projekt/460234259)
 
 We use free SVG icons from [Font Awesone](https://fontawesome.com/)
