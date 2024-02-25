@@ -105,13 +105,13 @@ The markup corresponding to `schema:SoftwareSourceCode` is shown below. Note tha
     },
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -142,13 +142,13 @@ And here you have the markup corresponding to the `bioschemas:ComputationalTool`
     "datePublished": "2022-11-21",
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -176,7 +176,7 @@ The [dataset page]() has markup only for one element, a dataset.
     "keywords": "Fleiss' Kappa, Inter-annoator agreement, TREC Genomics Track 2005, relevance assessment", 
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/CC-BY-4.0.html",
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
       "name": "Creative Commons Attribution 4.0 International", 
       "alternateName": "CC BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -257,13 +257,13 @@ This is how we have embedded the Bioschemas markup on the page
       "datePublished": "2022-11-21",
       "license": {
         "@type": "CreativeWork",
-        "@id": "https://spdx.org/licenses/MIT.html",
+        "@id": "http://spdx.org/licenses/MIT",
         "name": "MIT License", 
         "url": "https://opensource.org/license/mit/"
       },
       "author": [
         {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-        {"@id": "http://orcid.org/0000-0002-2910-7982"},
+        {"@id": "https://orcid.org/0000-0002-2910-7982"},
         {"@id": "https://orcid.org/0000-0002-8725-1317"},
         {"@id": "https://orcid.org/0009-0004-4484-6283"},
         {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -273,13 +273,13 @@ This is how we have embedded the Bioschemas markup on the page
     },
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
