@@ -26,13 +26,13 @@ This page has been created to embed schema.org and Bioschemas markup describing 
       "datePublished": "2022-11-21",
       "license": {
         "@type": "CreativeWork",
-        "@id": "https://spdx.org/licenses/MIT.html",
+        "@id": "http://spdx.org/licenses/MIT",
         "name": "MIT License", 
         "url": "https://opensource.org/license/mit/"
       },
       "author": [
         {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-        {"@id": "http://orcid.org/0000-0002-2910-7982"},
+        {"@id": "https://orcid.org/0000-0002-2910-7982"},
         {"@id": "https://orcid.org/0000-0002-8725-1317"},
         {"@id": "https://orcid.org/0009-0004-4484-6283"},
         {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -42,13 +42,13 @@ This page has been created to embed schema.org and Bioschemas markup describing 
      },
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},

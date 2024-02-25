@@ -15,7 +15,7 @@ This page has been created to embed schema.org and Bioschemas markup describing 
     "keywords": "Fleiss' Kappa, Inter-annoator agreement, TREC Genomics Track 2005, relevance assessment", 
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/CC-BY-4.0.html",
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
       "name": "Creative Commons Attribution 4.0 International", 
       "alternateName": "CC BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -29,3 +29,4 @@ This page has been created to embed schema.org and Bioschemas markup describing 
       {"@id": "https://orcid.org/0000-0003-3986-0510"}
     ]
   }
+  </script>
