@@ -49,7 +49,7 @@ In this tutorial we will cover:
 * [Validating the pages against the schema Validator](#validating-the-pages-against-the-schema-validator)
 * [Validating against the Rich Results Test](#validating-the-pages-against-the-rich-results-test)
 * [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
-* [Creating a sitemap](#creting-a-sitemap)
+* [Creating a sitemap](#creating-a-sitemap)
 * [Try it out](#try-it-out)
 
 ### Creating this GitHub Page
@@ -339,7 +339,7 @@ Only Bioschemas profiles will be checked so, in this case `bioschemas:Computatio
 
 We are missing some of the _recommended_ properties and the validator indicates this as _improvements_.
 
-### Creting a Sitemap
+### Creating a Sitemap
 If you want to make it easier for machines to crawl your website (and this could be a good idea when you have markup and you want to enable easy integration into aggregators), consider adding a sitemap.xml to your website.
 
 We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create [the one for the GitHub pages used in this tutorial](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/sitemap.xml). 
