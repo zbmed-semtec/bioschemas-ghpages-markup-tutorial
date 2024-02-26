@@ -49,7 +49,7 @@ In this tutorial we will cover:
 * [Validating the pages against the schema Validator](#validating-the-pages-against-the-schema-validator)
 * [Validating against the Rich Results Test](#validating-the-pages-against-the-rich-results-test)
 * [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
-* [Creating a sitemap](#creting-a-sitemap)
+* [Creating a sitemap](#creating-a-sitemap)
 * [Try it out](#try-it-out)
 
 ### Creating this GitHub Page
@@ -105,13 +105,13 @@ The markup corresponding to `schema:SoftwareSourceCode` is shown below. Note tha
     },
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -142,13 +142,13 @@ And here you have the markup corresponding to the `bioschemas:ComputationalTool`
     "datePublished": "2022-11-21",
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -176,7 +176,7 @@ The [dataset page]() has markup only for one element, a dataset.
     "keywords": "Fleiss' Kappa, Inter-annoator agreement, TREC Genomics Track 2005, relevance assessment", 
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/CC-BY-4.0.html",
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
       "name": "Creative Commons Attribution 4.0 International", 
       "alternateName": "CC BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/"
@@ -257,13 +257,13 @@ This is how we have embedded the Bioschemas markup on the page
       "datePublished": "2022-11-21",
       "license": {
         "@type": "CreativeWork",
-        "@id": "https://spdx.org/licenses/MIT.html",
+        "@id": "http://spdx.org/licenses/MIT",
         "name": "MIT License", 
         "url": "https://opensource.org/license/mit/"
       },
       "author": [
         {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-        {"@id": "http://orcid.org/0000-0002-2910-7982"},
+        {"@id": "https://orcid.org/0000-0002-2910-7982"},
         {"@id": "https://orcid.org/0000-0002-8725-1317"},
         {"@id": "https://orcid.org/0009-0004-4484-6283"},
         {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -273,13 +273,13 @@ This is how we have embedded the Bioschemas markup on the page
     },
     "license": {
       "@type": "CreativeWork",
-      "@id": "https://spdx.org/licenses/MIT.html",
+      "@id": "http://spdx.org/licenses/MIT",
       "name": "MIT License", 
       "url": "https://opensource.org/license/mit/"
     },
     "author": [
       {"@id": "https://zbmed-semtec.github.io/previous_members/#muhammad-talha"},
-      {"@id": "http://orcid.org/0000-0002-2910-7982"},
+      {"@id": "https://orcid.org/0000-0002-2910-7982"},
       {"@id": "https://orcid.org/0000-0002-8725-1317"},
       {"@id": "https://orcid.org/0009-0004-4484-6283"},
       {"@id": "https://orcid.org/0000-0003-2978-8922"},
@@ -339,7 +339,7 @@ Only Bioschemas profiles will be checked so, in this case `bioschemas:Computatio
 
 We are missing some of the _recommended_ properties and the validator indicates this as _improvements_.
 
-### Creting a Sitemap
+### Creating a Sitemap
 If you want to make it easier for machines to crawl your website (and this could be a good idea when you have markup and you want to enable easy integration into aggregators), consider adding a sitemap.xml to your website.
 
 We have used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create [the one for the GitHub pages used in this tutorial](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/sitemap.xml). 
@@ -386,6 +386,6 @@ We also briefly mentioned sitemaps with much of a context. We invite to get more
 ## Acknowledgements
 This tutorial is based on [bioschemas-github-markup-example](https://github.com/zbmed-semtec/bioschemas-github-markup-example) and [Adding schema.org to a GitHub Pages site](https://bioschemas.org/tutorials/howto/howto_add_github).
 
-LJC has received fundings from the [German Research Foundation (DFG)](https://www.dfg.de/en) via the grant for NFDI4DataScience No. 460234259](https://gepris.dfg.de/gepris/projekt/460234259)
+LJC has received fundings from the [German Research Foundation (DFG)](https://www.dfg.de/en) via the grant for NFDI4DataScience No. [460234259](https://gepris.dfg.de/gepris/projekt/460234259)
 
 We use free SVG icons from [Font Awesone](https://fontawesome.com/)
