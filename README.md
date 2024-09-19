@@ -45,34 +45,42 @@ These GitHub pages include a page describing a [software](./software.md) and a p
 
 ### Agenda
 In this tutorial we will cover:
-* [Creating this GitHub page](#creating-this-github-page)
-* [Adding schema.org and Bioschemas markup](#adding-schemaorg-and-bioschemas-markup)
-* [Visualizing the structured markup](#visualizing-the-structured-markup)
-* [Validating the pages against the schema Validator](#validating-the-pages-against-the-schema-validator)
-* [Validating against the Rich Results Test](#validating-the-pages-against-the-rich-results-test)
-* [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
-* [Creating a sitemap](#creating-a-sitemap)
-* [Try it out](#try-it-out)
+- [GitHub pages with Bioschemas markup](#github-pages-with-bioschemas-markup)
+  - [Overview](#overview)
+  - [Learning experience](#learning-experience)
+    - [Agenda](#agenda)
+    - [Creating this GitHub Page](#creating-this-github-page)
+    - [Adding schema.org and Bioschemas markup](#adding-schemaorg-and-bioschemas-markup)
+      - [Using schema.org types](#using-schemaorg-types)
+      - [Using Bioschemas profiles](#using-bioschemas-profiles)
+    - [Visualizing the structured markup](#visualizing-the-structured-markup)
+    - [Validating the pages against the Schema Validator](#validating-the-pages-against-the-schema-validator)
+    - [Validating the pages against the Rich Results Test](#validating-the-pages-against-the-rich-results-test)
+    - [Validating the pages against FAIR-Checker/Bioschemas validator](#validating-the-pages-against-fair-checkerbioschemas-validator)
+    - [Creating a Sitemap](#creating-a-sitemap)
+    - [Try it out](#try-it-out)
+  - [What is next?](#what-is-next)
+  - [Acknowledgements](#acknowledgements)
 
 ### Creating this GitHub Page
 Let's start by forking [this repository](https://github.com/zbmed-semtec/bioschemas-ghpages-markup-tutorial) for your own purposes. Once forked, go to settings
 
 ![Settings](./images/settings.png)
 
-You will need to enable "Pages" on your forked repository, and select "Deploy from a branch" using the branch "gh-pages". Save the changes. 
-
-As this repo does have a gh-pages branch, it will use it. If such branch would not exist, GitHub would ask you to use the main branch to start the gh-pages one
+You will need to enable "Pages" on your forked repository, and select under Source `Deploy from a branch`. Use the `main` branch and the folder `/docs`. `Save` your changes.
 
 ![GitHub Pages](./images/pages.png)
 
-In a matter of minutes, your site will be live. The pages corresponding to the examples used in this tutorial are available at [https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/)
+In a matter of minutes, your site will be live. The pages corresponding to the examples used in this tutorial are available at [https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/). They will have no markup to start with, you will add it in a moment.
 
 ![Published pages](./images/pages-published.png)
 
 Do not forget to get a local copy of your fork so you can make changes.
 
 ### Adding schema.org and Bioschemas markup
-We have already added schema.org and Bioschemas markup corresponding to our example, code and data for our repo [TREC-doc-2-doc-relevance](https://github.com/zbmed-semtec/TREC-doc-2-doc-relevance). With GitHub pages, same a with regular HTML (static or generated), the trick is adding the JSON-LD describing those elements that you want. To do so, you need to add a block `<script type="application/ld+json">` with the Bioschemas markup as a JSON-LD inside the block.
+We will add schema.org and Bioschemas markup corresponding to our example, code (software page) and data (dataset page) for our repo [TREC-doc-2-doc-relevance](https://github.com/zbmed-semtec/TREC-doc-2-doc-relevance). Right now those pages only have text, with the following steps you will get schema.org/Bioschemas markup embedded in your pages. 
+
+With GitHub pages, same a with regular HTML (static or generated), the trick is adding the JSON-LD describing those elements that you want. To do so, you need to add a block `<script type="application/ld+json">` with the Bioschemas markup as a JSON-LD inside the block.
 
 The Bioschemas markup will start with the context `"@context": "https://schema.org"`, i.e., where all types and profiles are defined.
 
@@ -86,9 +94,11 @@ Then you add the type and id of what you are describing, for instace a `bioschem
 
 For the rest of the markup, you need to see what the Bioschemas profile recommends ([keep reading, more information below](#using-bioschemas-profiles)).
 
-Have a look to the pages that we have created, one for the [code and corresponding release](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html), another for a [dataset created from data collected by the software](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software.html).
+To get the markup added to your pages, copy the content of [softare](./software.md) to the [software page under /docs folder](./docs/software.md). Then copy the content of [dataset](./dataset.md) to the [dataset page under /docs folder](./docs/dataset.md)
 
-The [software page] has markup for two elements, `schema:SoftareSourceCode` and `bioschemas:ComputationalTool`. 
+Have a look to the pages that you just created on our GitHub pages, one for the [code and corresponding release](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software), another for a [dataset created from data collected by the software](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset). To see them working for your repo, you need to use `<your_user>/<your_repo>` instead of `zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial` on the html link `https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset`.
+
+The [software page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/software) in your repo should now have markup for two elements, `schema:SoftareSourceCode` and `bioschemas:ComputationalTool`. 
 
 The markup corresponding to `schema:SoftwareSourceCode` is shown below. Note that the _source code_ is linked to the _release_ via the property `schema:targetProduct`. In the code below, we are using the _release_ `@id` to refer to it.
 
@@ -161,7 +171,7 @@ And here you have the markup corresponding to the `bioschemas:ComputationalTool`
 </script>
 ```
 
-The [dataset page]() has markup only for one element, a dataset.
+The [dataset page](https://zbmed-semtec.github.io/bioschemas-ghpages-markup-tutorial/dataset) in your repo should now have markup only for one element, a dataset.
 
 ```
 <script type="application/ld+json">
