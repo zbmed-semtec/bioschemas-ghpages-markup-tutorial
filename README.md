@@ -31,11 +31,11 @@ These GitHub pages include a page describing a [software](./software.md) and a p
 
 <img src="./icons/calendar.svg" width="16" height="16"/> __Published__ 2024-02-05
 
-<img src="./icons/pen-to-square.svg" width="16" height="16"/> __Latest modification__ 2024-09-19
+<img src="./icons/pen-to-square.svg" width="16" height="16"/> __Latest modification__ 2024-09-20
 
 <img src="./icons/scale-balance.svg" width="16" height="16"/> __License__ [CC-By 4.0](https://spdx.org/licenses/CC-BY-4.0)
 
-<img src="./icons/code-compare.svg" width="16" height="16"/> __Version__ 1.1.0
+<img src="./icons/code-compare.svg" width="16" height="16"/> __Version__ 1.1.1
 
 <img src="./icons/fingerprint.svg" width="16" height="16"/> __Identifier__ [DOI:10.5281/zenodo.13799121](https://doi.org/10.5281/zenodo.13799121)
 
